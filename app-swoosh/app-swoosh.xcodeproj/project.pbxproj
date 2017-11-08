@@ -16,6 +16,7 @@
 		048CAE2F1FB210D80010CF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048CAE2E1FB210D80010CF20 /* Assets.xcassets */; };
 		048CAE321FB210D80010CF20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048CAE301FB210D80010CF20 /* LaunchScreen.storyboard */; };
 		048CAE3B1FB21C1B0010CF20 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048CAE3A1FB21C1B0010CF20 /* BorderButton.swift */; };
+		04E618531FB37D3D007BA402 /* FinishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E618521FB37D3D007BA402 /* FinishVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		048CAE311FB210D80010CF20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048CAE331FB210D80010CF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048CAE3A1FB21C1B0010CF20 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		04E618521FB37D3D007BA402 /* FinishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 				048CAE291FB210D80010CF20 /* WelcomeVC.swift */,
 				044592191FB34CD800993773 /* LeagueVC.swift */,
 				0445921B1FB34D0500993773 /* SkillVC.swift */,
+				04E618521FB37D3D007BA402 /* FinishVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				048CAE2A1FB210D80010CF20 /* WelcomeVC.swift in Sources */,
 				0445921A1FB34CD800993773 /* LeagueVC.swift in Sources */,
+				04E618531FB37D3D007BA402 /* FinishVC.swift in Sources */,
 				048CAE281FB210D80010CF20 /* AppDelegate.swift in Sources */,
 				0445921C1FB34D0500993773 /* SkillVC.swift in Sources */,
 				0445921E1FB35A3A00993773 /* Player.swift in Sources */,

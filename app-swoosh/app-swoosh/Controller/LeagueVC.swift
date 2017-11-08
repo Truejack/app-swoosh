@@ -23,15 +23,15 @@ class LeagueVC: UIViewController {
     }
     
     @IBAction func onMensTapped(_ sender: Any) {
-        selectLeague(leagueType: "mens")
+        selectLeague(leagueType: "Mens")
     }
     
     @IBAction func onWomensTapped(_ sender: Any) {
-        selectLeague(leagueType: "womens")
+        selectLeague(leagueType: "Womens")
     }
     
     @IBAction func onCoedTapped(_ sender: Any) {
-       selectLeague(leagueType: "coed")
+       selectLeague(leagueType: "Coed")
     }
     
     

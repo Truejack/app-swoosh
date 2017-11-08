@@ -11,21 +11,50 @@ import UIKit
 class SkillVC: UIViewController {
     
     var player: Player!
+    
+    
+    @IBOutlet weak var finishBtn: BorderButton!
+    
+    
+    @IBAction func onFinishTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "FinishVCSegue", sender: self)
+    }
+    
+    @IBAction func onBeginnerTapped(_ sender: Any) {
+        selectLevel(levelType: "Beginner")
+    }
+    
+    
+    @IBAction func onBallerTapped(_ sender: Any) {
+        selectLevel(levelType: "Baller")
+    }
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(player.desiredLeague)
 
-        // Do any additional setup after loading the view.
+       player = Player()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func selectLevel(levelType: String) {
+        player.selectedSkillLevel = levelType
+        finishBtn.isEnabled = true
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let FinishVC = segue.destination as? FinishVC {
+    
+            FinishVC.player = player
+
+        }
+    
     /*
     // MARK: - Navigation
 
@@ -36,4 +65,5 @@ class SkillVC: UIViewController {
     }
     */
 
+}
 }
